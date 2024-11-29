@@ -1,0 +1,231 @@
+body {
+    background-color: #080d20;
+}
+
+
+.container {
+
+    max-width: 800px;
+    color: white;
+    padding: 2rem;
+    font-family: system-ui, sans-serif;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.stat h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.stat p {
+    color: #8888a5;
+    margin: 0;
+    margin-top: 0.4rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.token-info {
+    display: flex;
+
+
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width: 650px) {
+
+    .token-info {
+        flex-wrap: wrap;
+        min-width: 150px;
+        text-align: center;
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
+
+.token-price {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.token-icon, .eth-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.progress-container {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.progress-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg, #4a3aff, #8478ff);
+}
+
+.progress-marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #988fff;
+    border-radius: 50%;
+    top: -7px;
+    left: 60%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.tokens-sold {
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+    text-align: center;
+    top: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tics-icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.5rem;
+}
+
+.sold-amount {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.sold-label {
+    color: #8888a5;
+    font-size: 0.875rem;
+}
+
+.step {
+    margin-bottom: 2rem;
+}
+
+.step h3 {
+    color: #8888a5;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.method-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.method-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.method-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.conversion-inputs {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+}
+
+.input-group input {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
+}
+
+.currency {
+    color: #8888a5;
+    margin-left: 0.5rem;
+}
+
+.equals {
+    font-size: 1.5rem;
+    color: #8888a5;
+}
+
+.connect-wallet {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(90deg, #4a3aff, #8478ff);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: opacity 0.2s;
+}
+
+.connect-wallet:hover {
+    opacity: 0.9;
+}
+
+.help-link {
+    text-align: center;
+    color: #8888a5;
+    cursor: pointer;
+}
+
+.help-link:hover {
+    color: white;
+}
